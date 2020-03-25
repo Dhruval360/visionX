@@ -40,9 +40,9 @@ class Mailing: # this sends final destinatio,path to travel and so on
         try:
             server = smtplib.SMTP("smtp.gmail.com",587)  # we are trying to create a session with gmail server
             server.starttls()  #we are trying to set up a transport layer security system to encrypt the mails being sent   #security feature
-            server.login("danceboyyaya@gmail.com","chandra69chandra") #email ans password of host server which ll send the mails and config1 contains it
+            server.login("*******@gmail.com","*********") #email and password of host server which ll send the mails and config1 contains it
             self.message_body = self.data
-            server.sendmail("danceboyyaya@gmail.com",price[-1][-2],self.message_body) 
+            server.sendmail("*********@gmail.com",price[-1][-2],self.message_body) 
             print("Mail sent successfully")
             #terminating the server now
             server.quit()
@@ -52,8 +52,8 @@ class image_mail:
     def __init__(self):
         pass
     def send_image(self):
-        email = 'danceboyyaya@gmail.com'
-        password = 'chandra69chandra'
+        email = '******@gmail.com'
+        password = '************'
         send_to_email = price[-1][-2]
         subject = 'Parking details'
         message = 'From visionX'
